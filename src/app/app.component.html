@@ -6,7 +6,10 @@
 class="form-control" 
 placeholder="Add a string" 
 aria-describedby="basic-addon1" 
-[(ngModel)]="string1">
+[(ngModel)]="string1"
+(keyup)="reverseString($event)"
+>
 
+<p>Good Moring {{string1}}</p>
 <p>Good Moring {{string1}}</p>
 </div>

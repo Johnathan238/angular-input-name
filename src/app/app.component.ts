@@ -9,5 +9,10 @@ export class AppComponent  {
   name = 'Angular ' + VERSION.major;
 
   string1: string = ''
-  
+  reverseStringName = ''
+  reverseString(event){
+    this.reverseStringName = ''
+    this.reverseStringName = event.target.string1.split("").reverse().join("")
+    console.log(this.reverseStringName)
+  }
 }
