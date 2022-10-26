@@ -10,9 +10,10 @@ export class AppComponent  {
 
   string1: string = ''
   reverseStringName = ''
-  reverseString(event){
-    this.reverseStringName = ''
-    this.reverseStringName = event.target.string1.split("").reverse().join("")
+  reverseString(event: any){
+    // this.reverseStringName = ''
+    this.reverseStringName = event.target.value.split("").reverse("").join("")
     console.log(this.reverseStringName)
+    console.log(event.target.value)
   }
 }
