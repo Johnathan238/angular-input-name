@@ -11,7 +11,6 @@ export class AppComponent  {
   string1: string = ''
   reverseStringName = ''
   reverseString(event: any){
-    // this.reverseStringName = ''
     this.reverseStringName = event.target.value.split("").reverse("").join("")
     console.log(this.reverseStringName)
     console.log(event.target.value)
